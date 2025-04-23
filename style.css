@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #ccc7cb, #ff51b6);
+    padding: 40px 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 
+      2px 2px 3px rgba(0, 0, 0, 0.3),   /* Light shadow to the bottom-right */
+      4px 4px 6px rgba(0, 0, 0, 0.2),   /* Stronger shadow for depth */
+      6px 6px 8px rgba(0, 0, 0, 0.1);   /* Faint shadow for a more rounded look */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 36px; /* Larger font size for more impact */
+    font-weight: bold;
+    gap: 10px;
+    color: rgb(255, 255, 255); /* White text color */
+    text-shadow: 
+      2px 2px 3px rgba(0, 0, 0, 0.3),   /* Light shadow to the bottom-right */
+      4px 4px 6px rgba(0, 0, 0, 0.2),   /* Stronger shadow for depth */
+      6px 6px 8px rgba(0, 0, 0, 0.1);   /* Faint shadow for a more rounded look */
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; 
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    float: right;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .hero {
+    position: relative;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 100px 20px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('487806461_742895845163269_5864008803212140695_n.jpg') center/cover no-repeat;
+    filter: blur(4px) brightness(0.6);
+    z-index: -1;
+  }
+  
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background: white;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 4px;
+  }
+  
+  .about, .courses, .contact {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .course-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    background: #ecf0f1;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+  
