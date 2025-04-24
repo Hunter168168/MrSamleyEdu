@@ -18,7 +18,7 @@
   
   header {
     background: linear-gradient(90deg, #ccc7cb, #ff51b6);
-    padding: 40px 0;
+    padding: 50px 0;
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 
@@ -100,10 +100,12 @@
     background: white;
     color: #000000;
     padding: 10px 20px;
+    margin: 10px; /* <- Add space around the button */
     text-decoration: none;
     font-weight: bold;
     font-style: italic;
     border-radius: 4px;
+    display: inline-block; /* Optional: ensures margin applies properly */
   }
   
   .about, .courses, .contact {
@@ -113,7 +115,7 @@
   
   .course-list {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
   }
